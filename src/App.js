@@ -1,5 +1,6 @@
 // Libs
 import React, { Component } from 'react';
+import ReactCSSTransisitonGroup from 'react-addons-css-transition-group';
 // CSS
 import './css/style.css';
 
@@ -45,11 +46,17 @@ export default class GuestList extends Component {
         <h1>Guest List</h1>
         <input type="text" placeholder="Invite Someone" value={this.state.newName}
                onKeyDown={this.handleChange.bind(this)}/>
-        <ul>
+        {/*<ul>*/}
+          <ReactCSSTransisitonGroup
+            component="ul"
+            transitionName="slide"
+            transitionEnterTimeout={500}
+            transitionLeaveTimeout={500}>
 
           {guests}
 
-        </ul>
+          </ReactCSSTransisitonGroup>
+        {/*</ul>*/}
       </div>
     );
   }
