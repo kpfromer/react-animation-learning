@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import './css/style.css';
 
 // Component
-class GuestList extends Component {
+export default class GuestList extends Component {
   constructor() {
     super(...arguments);
     this.state = {
