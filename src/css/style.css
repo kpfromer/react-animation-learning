@@ -92,3 +92,11 @@ li:hover button {
 }
 
 /* initial mounting */
+.slide-appear {
+  opacity: 0;
+}
+
+.slide-appear.slide-appear-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}

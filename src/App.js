@@ -51,7 +51,10 @@ export default class GuestList extends Component {
             component="ul"
             transitionName="slide"
             transitionEnterTimeout={500}
-            transitionLeaveTimeout={500}>
+            transitionLeaveTimeout={500}
+            transitionAppear
+            transitionAppearTimeout={500}
+          >
 
           {guests}
 
